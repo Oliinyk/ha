@@ -1,11 +1,55 @@
-/**
-  * Name: Autora
-  * Version: 1.0.1
-  * Author: Themesflat
-  * Author URI: http://www.themesflat.com
-*/
+@font-face {
+    font-family: 'Acumin Pro';
+    src: url('assets/fonts/acumin-pro-cufon/Acumin-RPro.eot');
+    src: local("assets/fonts/acumin-pro-cufon/Acumin-RPro"), 
+            local("assets/fonts/acumin-pro-cufon/Acumin-RPro"), 
+            url('assets/fonts/acumin-pro-cufon/Acumin-RPro.eot?#iefix') format("embedded-opentype"), 
+            url('assets/fonts/acumin-pro-cufon/Acumin-RPro.woff2') format("woff2"), 
+            url('assets/fonts/acumin-pro-cufon/Acumin-RPro.woff') format("woff"), 
+            url('assets/fonts/acumin-pro-cufon/Acumin-RPro.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300;400;500;600;700&display=swap');
+@font-face {
+    font-family: 'Acumin Pro Italic';
+    src: url('assets/fonts/acumin-pro-cufon/Acumin-ItPro.eot');
+    src: local("assets/fonts/acumin-pro-cufon/Acumin-ItPro"), 
+            local("assets/fonts/acumin-pro-cufon/Acumin-ItPro"), 
+            url('assets/fonts/acumin-pro-cufon/Acumin-ItPro.eot?#iefix') format("embedded-opentype"), 
+            url('assets/fonts/acumin-pro-cufon/Acumin-ItPro.woff2') format("woff2"), 
+            url('assets/fonts/acumin-pro-cufon/Acumin-ItPro.woff') format("woff"), 
+            url('assets/fonts/acumin-pro-cufon/Acumin-ItPro.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acumin Pro Bold';
+    src: url('assets/fonts/acumin-pro-cufon/Acumin-BdPro.eot');
+    src: local("assets/fonts/acumin-pro-cufon/Acumin-BdPro"), 
+            local("assets/fonts/acumin-pro-cufon/Acumin-BdPro"), 
+            url('assets/fonts/acumin-pro-cufon/Acumin-BdPro.eot?#iefix') format("embedded-opentype"), 
+            url('assets/fonts/acumin-pro-cufon/Acumin-BdPro.woff2') format("woff2"), 
+            url('assets/fonts/acumin-pro-cufon/Acumin-BdPro.woff') format("woff"), 
+            url('assets/fonts/acumin-pro-cufon/Acumin-BdPro.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acumin Pro Bold Italic';
+    src: url('assets/fonts/acumin-pro-cufon/Acumin-BdItPro.eot');
+    src: local("assets/fonts/acumin-pro-cufon/Acumin-BdItPro"), 
+            local("assets/fonts/acumin-pro-cufon/Acumin-BdItPro"), 
+            url('assets/fonts/acumin-pro-cufon/Acumin-BdItPro.eot?#iefix') format("embedded-opentype"), 
+            url('assets/fonts/acumin-pro-cufon/Acumin-BdItPro.woff2') format("woff2"), 
+            url('assets/fonts/acumin-pro-cufon/Acumin-BdItPro.woff') format("woff"), 
+            url('assets/fonts/acumin-pro-cufon/Acumin-BdItPro.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
 @import "assets/css/bootstrap.css";
 @import "assets/css/animate.css";
 @import "assets/css/owl.carousel.css";
@@ -244,7 +288,8 @@ button,
 input,
 select,
 textarea {
-    font-family            : 'Open Sans', sans-serif;
+    /* font-family            : 'Open Sans', sans-serif; */
+    font-family            : 'Acumin Pro', sans-serif;
     font-weight            : 400;
     color                  : #555555;
     font-size              : 14px;
