@@ -1,3 +1,10 @@
+@import "assets/css/bootstrap.css";
+@import "assets/css/animate.css";
+@import "assets/css/owl.carousel.css";
+@import "assets/css/font-awesome.css";
+@import "assets/css/ionicons.css";
+@import "assets/css/shortcodes.css";
+
 @font-face {
     font-family: 'Acumin Pro';
     src: url('assets/fonts/acumin-pro-cufon/Acumin-RPro.eot');
@@ -49,13 +56,6 @@
     font-weight: 400;
     font-style: normal;
 }
-
-@import "assets/css/bootstrap.css";
-@import "assets/css/animate.css";
-@import "assets/css/owl.carousel.css";
-@import "assets/css/font-awesome.css";
-@import "assets/css/ionicons.css";
-@import "assets/css/shortcodes.css";
 
 /**
   *	Reset Browsers
