@@ -187,3 +187,57 @@ body {
     background-size: cover;
     padding: 300px 0 0;
 }
+
+
+
+
+.who-we-are {
+    padding: 50px 0;
+    display: flex;
+    position: relative;
+}
+.who-we-are .left-img-col {
+    background-image: url('../img/section/male-server-administrator.jpg');
+    background-size: cover;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+.who-we-are .right-img-col {
+    background: #eeece4;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.who-we-are .right-img-col img {
+    opacity: 0.6;
+}
+.who-we-are .text-holder {
+    padding: 54px 30px 53px 45px;
+    position: absolute;
+    background: #4C475C;
+    border-top-right-radius: 100px;
+    top: 13%;
+    left: 51.3%;
+    width: 570px;
+}
+.who-we-are .title {
+    color: #fff;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+.who-we-are p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.btn {
+    background-color: #eeece4;
+    color: #1d1b24;
+    display: inline-block;
+    font-size: 15px;
+    padding: 5px 10px;
+}
