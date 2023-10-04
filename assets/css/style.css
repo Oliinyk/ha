@@ -1,5 +1,5 @@
 
-@import "font-awesome.css";
+@import "fontawesome.css";
 
 @font-face {
     font-family: 'Acumin Pro';
@@ -118,6 +118,20 @@
     }
 }
 
+.btn {
+    transition: all .25s ease-in-out;
+}
+.btn:hover {
+    opacity: 0.7;
+}
+.btn .icon {
+    transform: translateZ(0);
+    transition: .25s;
+}
+.btn:hover .icon {
+    transform: translate3d(7px,0,0);
+}
+
 body {
     font-family: 'Acumin Pro';
 }
@@ -183,7 +197,7 @@ body {
 }
 
 .hero {
-    background-image: url('../img/hero/hero-index.png');
+    /* background-image: url('../img/hero/hero-index.png'); */
     background-size: cover;
-    padding: 300px 0 0;
+    /* padding: 300px 0 0; */
 }
