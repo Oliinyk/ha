@@ -3,14 +3,53 @@
 
 @font-face {
     font-family: 'Acumin Pro';
-    src: url('../fonts/acumin-pro-cufon/Acumin-RPro.eot');
-    src: local("../fonts/acumin-pro-cufon/Acumin-RPro"), 
-            local("../fonts/acumin-pro-cufon/Acumin-RPro"), 
-            url('../fonts/acumin-pro-cufon/Acumin-RPro.eot?#iefix') format("embedded-opentype"), 
-            url('../fonts/acumin-pro-cufon/Acumin-RPro.woff2') format("woff2"), 
-            url('../fonts/acumin-pro-cufon/Acumin-RPro.woff') format("woff"), 
-            url('../fonts/acumin-pro-cufon/Acumin-RPro.ttf') format("truetype");
+    src: url('../fonts/acumin-pro-cufon/Acumin-Pro.eot');
+    src: local("../fonts/acumin-pro-cufon/Acumin-Pro"), 
+            local("../fonts/acumin-pro-cufon/Acumin-Pro"), 
+            url('../fonts/acumin-pro-cufon/Acumin-Pro.eot?#iefix') format("embedded-opentype"), 
+            url('../fonts/acumin-pro-cufon/Acumin-Pro.woff2') format("woff2"), 
+            url('../fonts/acumin-pro-cufon/Acumin-Pro.woff') format("woff"), 
+            url('../fonts/acumin-pro-cufon/Acumin-Pro.ttf') format("truetype");
     font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acumin Pro'; /* Medium */
+    src: url('../fonts/acumin-pro-cufon/Acumin-MediumPro.eot');
+    src: local("../fonts/acumin-pro-cufon/Acumin-MediumPro"), 
+            local("../fonts/acumin-pro-cufon/Acumin-MediumPro"), 
+            url('../fonts/acumin-pro-cufon/Acumin-MediumPro.eot?#iefix') format("embedded-opentype"), 
+            url('../fonts/acumin-pro-cufon/Acumin-MediumPro.woff2') format("woff2"), 
+            url('../fonts/acumin-pro-cufon/Acumin-MediumPro.woff') format("woff"), 
+            url('../fonts/acumin-pro-cufon/Acumin-MediumPro.ttf') format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acumin Pro'; /* Semibold */
+    src: url('../fonts/acumin-pro-cufon/Acumin-smbd.eot');
+    src: local("../fonts/acumin-pro-cufon/Acumin-smbd"), 
+            local("../fonts/acumin-pro-cufon/Acumin-smbd"), 
+            url('../fonts/acumin-pro-cufon/Acumin-smbd.eot?#iefix') format("embedded-opentype"), 
+            url('../fonts/acumin-pro-cufon/Acumin-smbd.woff2') format("woff2"), 
+            url('../fonts/acumin-pro-cufon/Acumin-smbd.woff') format("woff"), 
+            url('../fonts/acumin-pro-cufon/Acumin-smbd.ttf') format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acumin Pro'; /* Bold */
+    src: url('../fonts/acumin-pro-cufon/Acumin-BdPro.eot');
+    src: local("../fonts/acumin-pro-cufon/Acumin-BdPro"), 
+            local("../fonts/acumin-pro-cufon/Acumin-BdPro"), 
+            url('../fonts/acumin-pro-cufon/Acumin-BdPro.eot?#iefix') format("embedded-opentype"), 
+            url('../fonts/acumin-pro-cufon/Acumin-BdPro.woff2') format("woff2"), 
+            url('../fonts/acumin-pro-cufon/Acumin-BdPro.woff') format("woff"), 
+            url('../fonts/acumin-pro-cufon/Acumin-BdPro.ttf') format("truetype");
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -24,19 +63,6 @@
             url('../fonts/acumin-pro-cufon/Acumin-ItPro.woff') format("woff"), 
             url('../fonts/acumin-pro-cufon/Acumin-ItPro.ttf') format("truetype");
     font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Acumin Pro Bold';
-    src: url('../fonts/acumin-pro-cufon/Acumin-BdPro.eot');
-    src: local("../fonts/acumin-pro-cufon/Acumin-BdPro"), 
-            local("../fonts/acumin-pro-cufon/Acumin-BdPro"), 
-            url('../fonts/acumin-pro-cufon/Acumin-BdPro.eot?#iefix') format("embedded-opentype"), 
-            url('../fonts/acumin-pro-cufon/Acumin-BdPro.woff2') format("woff2"), 
-            url('../fonts/acumin-pro-cufon/Acumin-BdPro.woff') format("woff"), 
-            url('../fonts/acumin-pro-cufon/Acumin-BdPro.ttf') format("truetype");
-    font-weight: 700;
     font-style: normal;
 }
 
