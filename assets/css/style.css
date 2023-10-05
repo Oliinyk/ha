@@ -142,6 +142,12 @@ body {
     transition        : all ease 0.3s;
 }
 
+.header-white .mobile-button:before,
+.header-white .mobile-button:after,
+.header-white .mobile-button span {
+    background-color  : #1d1b24;
+}
+
 .mobile-button:before,
 .mobile-button:after {
     content                 : '';
@@ -211,9 +217,19 @@ body {
     font-size: 24px;
     font-weight: 500;
     letter-spacing: 2px;
-    color: #fff;
+    color: #1d1b24;
     text-transform: uppercase;
     white-space: nowrap;
+}
+.header-white {
+    position: relative;
+}
+.header-white .logo {
+    max-width: 293px;
+    display: block;
+}
+.header-transparent .menu-item a {
+    color: #fff;
 }
 .header .menu-item a:hover {
     color: #0053ff;
@@ -468,6 +484,28 @@ body {
     margin: 50px 0 0;
 }
 
+
+
+
+.services .hero {
+    display: flex;
+    position: relative;
+}
+.our-goal {
+    background-color: #383446;
+    text-align: center;
+    padding: 60px 15px;
+}
+.our-goal p {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #fff;
+    margin: 0 0 30px;
+}
+.our-goal .btn-holder {
+    justify-content: center;
+}
 
 
 .btn-holder {
