@@ -44,6 +44,22 @@
         }).eq(0).addClass("active");
     };
 
+    // Scroll Top
+    var scrollToTop = function() {
+        $(window).scroll(function() {
+            if ( $(this).scrollTop() > 300 ) {
+                $('#scroll-top').addClass('show');
+            } else {
+                $('#scroll-top').removeClass('show');
+            }
+        });
+
+        $('#scroll-top').on('click', function() {
+            $('html, body').animate({ scrollTop: 0 } , 'easeInOutExpo');
+        return false;
+        });
+    }
+
     // wowAnimation
     let wowAnimation = function () {
         new WOW().init();   
@@ -54,6 +70,7 @@
         // flatAccordions();
         Preloader();
         Tab();
+        scrollToTop();
         wowAnimation();
     });
 

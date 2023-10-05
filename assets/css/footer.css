@@ -47,6 +47,9 @@
     font-weight: 400;
     font-size: 18px;
 }
+.our-inner .list-info .sub-title a:hover {
+    opacity: .7;
+}
 .our-inner .icon {
     display: flex;
     align-items: center;
