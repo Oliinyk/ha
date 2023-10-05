@@ -157,6 +157,9 @@
 .btn:hover .icon {
     transform: translate3d(7px,0,0);
 }
+.text-right {
+    text-align: right;
+}
 
 body {
     font-family: 'Acumin Pro';
@@ -206,6 +209,7 @@ body {
 }
 .header .menu-item a {
     font-size: 24px;
+    font-weight: 500;
     color: #fff;
     text-transform: uppercase;
 }
@@ -231,12 +235,10 @@ body {
 .social-menu .item-social + .item-social {
     margin-left: 10px;
 }
-
-
 .hero {
     background-image: url('../img/hero/hero-index.png');
     background-size: cover;
-    padding: 200px 0 0;
+    padding: 200px 0 40px;
 }
 .hero-text-wrap {
     text-align: center;
@@ -253,6 +255,7 @@ body {
 .hero-text-wrap .title {
     color: #EEECE4;
     font-size: 75px;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     position: relative;
@@ -274,9 +277,8 @@ body {
     color: #fff;
     font-size: 30px;
     opacity: 0.80;
+    margin: 0 0 50px;
 }
-
-
 .menu-tab {
     overflow: hidden;
     margin: 0 -15px;
@@ -297,10 +299,102 @@ body {
     margin: 10px 0 25px 0;
     position: relative;
 }
+.menu-tab .icon-box::before {
+    content: "";
+    position: absolute;
+    bottom: -19px;
+    left: 50%;
+    margin-left: -19px;
+    opacity: 0;
+    visibility: hidden;
+    border-left: 19px solid transparent;
+    border-right: 19px solid transparent;
+    border-top: 21px solid #EEECE4;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.menu-tab .active .icon-box::before {
+    opacity: 1;
+    visibility: visible;
+    bottom: -19px;
+}
 .menu-tab .active .icon-box {
     background-color: #EEECE4;
 }
-
+.menu-tab .thumb {
+    padding: 0 25px;
+}
+.menu-tab .text-wrap {
+    padding: 0px 7px 10px;
+}
+.menu-tab .title-icon {
+    color: #1D1B24;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.menu-tab .active .title-icon {
+    color: #0053FF;
+}
+.content-tab {
+    background-color: rgb(238 236 228 / 90%);
+    margin: 30px 0 0;
+}
+.content-tab .content-item {
+    display: none;
+    padding: 70px 60px;
+}
+.content-tab .content-item.active {
+    display: block;
+}
+.content-tab .content-item.small-img {
+    padding: 35px 60px;
+}
+.content-tab .inner-wrap {
+    display: flex;
+}
+.content-tab .text-col {
+    padding: 0 50px 0 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.content-tab .img-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.content-tab .hr {
+    display: inline-flex;
+    margin-bottom: 6px;
+}
+.content-tab .hr .hr-1 {
+    width: 80px;
+    height: 3px;
+    background: #0053FF;
+}
+.content-tab .hr .hr-2 {
+    background: #0053FF;
+    width: 13px;
+    height: 3px;
+    margin-left: 15px;
+}
+.content-tab .title-heading {
+    color: #1d1b24;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    max-width: 300px;
+    margin: 20px 0 15px;
+}
+.content-tab .text {
+    color: #1d1b24;
+    font-size: 18px;
+    margin: 0 0 30px;
+}
+.content-tab .btn {
+    margin: 0;
+}
 
 .who-we-are {
     display: flex;
@@ -372,4 +466,8 @@ body {
 }
 .btn .icon {
     margin-left: 15px;
+}
+.btn-dark {
+    background-color: #4C475C;
+    color: #fff;
 }
