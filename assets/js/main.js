@@ -7,25 +7,6 @@
 
     "use strict";
 
-
-    // var flatAccordions = function() {
-    //     var args = { easing: 'easeOutExpo', duration: 500 };
-
-    //     $('.accordion-item.active').find('.accordion-content').show();
-    //     $('.accordion-heading').on('click', function() {
-    //         if (!$(this).parent().is('.active')) {
-    //             $(this).parent().toggleClass('active')
-    //                 .children('.accordion-content').slideToggle(args)
-    //                 .parent().siblings('.active').removeClass('active')
-    //                 .children('.accordion-content').slideToggle(args);
-    //         } else {
-    //             $(this).parent().toggleClass('active');
-    //             $(this).next().slideToggle(args);
-    //         }
-    //     });
-    // };
-
-
     // PreLoad
     let Preloader = function() {        
         $(window).on("load", function () {
@@ -36,6 +17,12 @@
         });
     };
 
+    // Mobile menu
+    $(document).on('click', '.mobile-button', function() {
+        $(this).toggleClass('active');
+        $('.lists-wrap').slideToggle();
+    })
+
     // Tab
     let Tab = function() {
         $(".menu-tab li").click(function() {
@@ -45,7 +32,7 @@
     };
 
     // Scroll Top
-    var scrollToTop = function() {
+    let scrollToTop = function() {
         $(window).scroll(function() {
             if ( $(this).scrollTop() > 300 ) {
                 $('#scroll-top').addClass('show');
@@ -67,7 +54,6 @@
 
     // Dom Ready
     $(function() {
-        // flatAccordions();
         Preloader();
         Tab();
         scrollToTop();
