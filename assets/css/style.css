@@ -236,7 +236,7 @@ body {
 .social-menu .item-social + .item-social {
     margin-left: 10px;
 }
-.hero {
+.home .hero {
     background-image: url('../img/hero/hero-index.png');
     background-size: cover;
     padding: 200px 0 40px;
@@ -439,27 +439,23 @@ body {
     line-height: 1.5;
 }
 .who-we-are .btn-holder {
-    display: flex;
     margin: 50px 0 0;
 }
-.who-we-are .btn-holder .btn {
-    margin: 0;
+
+
+
+.btn-holder {
+    display: flex;
 }
-
-
-
-
 .btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 245px;
-    margin: 0 auto;
     background-color: #EEECE4;
     color: #1d1b24;
     font-size: 15px;
     line-height: 1;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     padding: 22px 15px;
     border-radius: 5px;
     text-transform: uppercase;
