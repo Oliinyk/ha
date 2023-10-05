@@ -36,10 +36,16 @@
         });
     };
 
+    // wowAnimation
+    var wowAnimation = function () {
+        new WOW().init();   
+    }
+
     // Dom Ready
     $(function() {
         flatAccordions();
         Preloader();
+        wowAnimation();
     });
 
 })(jQuery);

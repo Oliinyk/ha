@@ -161,6 +161,15 @@
 }
 .ourteam-section .title-section {
     letter-spacing: 4px;
+    margin-bottom: 35px;
+}
+.ourteam-section .description {
+    max-width: 1370px;
+    padding: 0 15px;
+    margin: 0 auto 75px;
+    font-size: 18px;
+    line-height: 1.7;
+    text-wrap: balance;
 }
 .row-ourteam {
     display: grid;

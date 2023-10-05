@@ -1,4 +1,5 @@
 
+@import "animate.css";
 @import "fontawesome.css";
 
 @font-face {
@@ -161,6 +162,7 @@
 body {
     font-family: 'Acumin Pro';
 }
+
 .container {
     position: relative;
     margin-left: auto;
@@ -168,16 +170,19 @@ body {
     padding-right: 15px;
     padding-left: 15px;
 }
+
 @media (min-width: 768px) {
     .container {
         width: 750px;
     }
 }
+
 @media (min-width: 992px) {
     .container {
         width: 970px;
     }
 }
+
 @media (min-width: 1200px) {
     .container {
         width: 1200px;
@@ -191,6 +196,7 @@ body {
     align-items: center;
     padding: 30px 60px;
 }
+
 .header-transparent {
     position: absolute;
     top: 0;
@@ -198,178 +204,45 @@ body {
     right: 0;
     width: 100%;
 }
+
 .header .menu {
     display: flex;
 }
+
 .header .menu-item {
     padding: 0 20px;
 }
+
 .header .menu-item a {
     font-size: 24px;
     color: #fff;
-    text-transform: uppercase;
 }
+
 .header .social-menu {
     display: flex;
     align-items: center;
 }
-.social-menu .item-social {
-    background-color: #EDEDE2;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 44px;
-    width: 44px;
-}
-.social-menu a {
-    color: #0054FF;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-}
-.social-menu .item-social + .item-social {
-    margin-left: 10px;
-}
-
 
 .hero {
-    background-image: url('../img/hero/hero-index.png');
+    /* background-image: url('../img/hero/hero-index.png'); */
     background-size: cover;
-    padding: 200px 0 0;
+    /* padding: 300px 0 0; */
 }
-.hero-text-wrap {
-    text-align: center;
-    max-width: 900px;
-    margin: 0 auto;
-}
-.hero-text-wrap .sub-title {
-    color: #EEECE4;
-    font-size: 19px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin: 0 0 10px;
-}
-.hero-text-wrap .title {
-    color: #EEECE4;
-    font-size: 75px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    position: relative;
-    padding: 0 0 10px;
-    margin: 0 0 25px;
-}
-.hero-text-wrap .title:after {
-    content: '';
-    background-color: #EEECE4;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 400px;
-    height: 1px;
-}
-.hero-text-wrap .text {
+
+/* footer */
+.footer {
+    background-color: #292633;
     color: #fff;
-    font-size: 30px;
-    opacity: 0.80;
 }
-
-
-.menu-tab {
-    overflow: hidden;
-    margin: 0 -15px;
-    padding: 0;
+.wrap-our-footer {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 3em;
+    /* margin: -71px -23px 0 -6px; */
 }
-.menu-tab li {
-    width: 20%;
-    padding: 0 15px;
-    float: left;
-    cursor: pointer;
-    overflow: hidden;
-    text-align: center;
-}
-.menu-tab .icon-box {
-    background-color: #fff;
+.our-inner {
     border-radius: 5px;
-    box-shadow: 0 3px 16px 0 rgb(0 0 0 / 6%);
-    margin: 10px 0 25px 0;
-    position: relative;
-}
-.menu-tab .active .icon-box {
-    background-color: #EEECE4;
-}
-
-
-.who-we-are {
-    display: flex;
-    position: relative;
-}
-.who-we-are .left-img-col {
-    background-image: url('../img/section/male-server-administrator.jpg');
-    background-size: cover;
-    flex: 0 0 66.666667%;
-    max-width: 66.666667%;
-}
-.who-we-are .right-img-col {
-    background: #eeece4;
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-}
-.who-we-are .right-img-col img {
-    opacity: 0.6;
-}
-.who-we-are .text-holder {
-    padding: 90px 30px 70px 45px;
-    position: absolute;
-    background: #4C475C;
-    border-top-right-radius: 100px;
-    top: 13%;
-    left: 51.3%;
-    width: 570px;
-}
-.who-we-are .title {
     color: #fff;
-    font-size: 55px;
-    margin-bottom: 20px;
-}
-.who-we-are p {
-    color: #fff;
-    font-size: 18px;
-    line-height: 1.5;
-}
-.who-we-are .btn-holder {
-    display: flex;
-    margin: 50px 0 0;
-}
-.who-we-are .btn-holder .btn {
-    margin: 0;
-}
-
-
-
-
-.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 245px;
-    margin: 0 auto;
-    background-color: #EEECE4;
-    color: #1d1b24;
-    font-size: 15px;
-    line-height: 1;
-    letter-spacing: 4px;
-    padding: 22px 15px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-.btn .icon {
-    margin-left: 15px;
+    padding: 36px 42px 31px;
+    background-color: #0053ff;
 }
