@@ -27,7 +27,7 @@
 
 
     // PreLoad
-    var Preloader = function() {        
+    let Preloader = function() {        
         $(window).on("load", function () {
             $(".loader").fadeOut();
             $("#loading-overlay").delay(500).fadeOut('slow',function(){
@@ -36,8 +36,7 @@
         });
     };
 
-
-    //
+    // Tab
     let Tab = function() {
         $(".menu-tab li").click(function() {
             $(".menu-tab li").removeClass("active").eq($(this).index()).addClass("active");
@@ -45,14 +44,17 @@
         }).eq(0).addClass("active");
     };
 
-
-
+    // wowAnimation
+    let wowAnimation = function () {
+        new WOW().init();   
+    }
 
     // Dom Ready
     $(function() {
         // flatAccordions();
         Preloader();
         Tab();
+        wowAnimation();
     });
 
 })(jQuery);
