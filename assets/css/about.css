@@ -1,36 +1,52 @@
 
 .about .hero {
     display: flex;
+    /* flex-wrap: wrap; */
     position: relative;
 }
-
 .wrap-banner-left {
     flex: 0 0 44.11111%;
     max-width: 44.11111%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url('../img/about/hero-bg.png');
-    background-size: cover;
+    /* align-items: center;
+    justify-content: center; */
+    /* background-image: url('../img/about/hero-bg.png'); */
+    /* background-size: cover; */
+}
+.wrap-banner-left img {
+    object-fit: cover;
+    object-position: 0 0;
 }
 .wrap-banner-right {
     flex: 0 0 55.88889%;
     max-width: 55.88889%;
+    display: flex;
 }
 .wrap-banner-right img {
     object-fit: cover;
     height: 100%;
 }
-/* .name-page {
-    position: relative;
-    top: 36.5%;
-    left: 4.5%;
-} */
+.hero-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.name-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
 .hero-title {
     color: #FFFFFF;
     font-size: 55px;
     font-weight: 500;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
 }
 .hero-subtitle,
 .hero-subtitle a {
@@ -38,6 +54,7 @@
     color: #FFFFFF;
     opacity: 0.7;
     text-transform: uppercase;
+    letter-spacing: 3px;
 }
 .hero-subtitle a {
     text-transform: capitalize;
@@ -55,34 +72,37 @@
 /* why-choose-us section */
 
 .why-choose-us {
-    padding: 60px 0;
+    padding: 58px 0 85px;
 }
 .section-wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .description-wrap {
-    padding: 25px 65px 0 0px;
+    padding: 20px 55px 0 0;
     font-size: 18px;
     line-height: 1.67;
+    letter-spacing: -1px;
     color: #383446;
 }
 .subtitle-section {
     font-size: 18px;
     letter-spacing: 4px;
     color: #1d1b24;
-    margin-bottom: 32px;
+    margin-bottom: 27px;
+    letter-spacing: 3px;
 }
 .title-section {
     font-size: 55px;
     line-height: 1;
     color: #1d1b24;
-    margin-bottom: 16px;
+    margin-bottom: 22px;
+    letter-spacing: -3.5px;
 }
 .text-subtitle {
     color: #0053FF;
     margin: 26px 0 29px -13px;
-    letter-spacing: 4.7px;
+    letter-spacing: 3px;
 }
 
 .wrap-border-img {
@@ -114,33 +134,20 @@
 /* row-group-section */
 
 .row-group-section {
-    padding: 115px 0 125px;
+    padding: 108px 0 127px;
     background-color: #4C475C;
     text-align: center;
 }
 .row-group-section .title-section {
     font-size: 40px;
     color: #fff;
-    max-width: 780px;
-    letter-spacing: 3.7px;
+    max-width: 815px;
+    letter-spacing: 1px;
     line-height: 1.45;
-    margin: 0 auto 28px;
+    margin: 0 auto 32px;
 }
 .row-group-section .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 245px;
     margin: 0 auto;
-    background-color: #EEECE4;
-    color: #1d1b24;
-    font-size: 15px;
-    line-height: 1;
-    letter-spacing: 4px;
-    padding: 22px 15px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: 500;
 }
 .row-group-section .btn .icon {
     margin-left: 15px;
@@ -149,26 +156,25 @@
 /* ourteam-section */
 
 .ourteam-section {
-    padding: 80px 0;
+    padding: 90px 0;
 }
 .ourteam-headings {
     text-align: center;
 }
 .ourteam-section .subtitle-section {
-    margin-bottom: 13px;
+    margin-bottom: 4px;
     font-weight: 500;
 }
 .ourteam-section .title-section {
-    letter-spacing: 4px;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 .ourteam-section .description {
-    max-width: 1370px;
+    max-width: 1400px;
     padding: 0 15px;
     margin: 0 auto 75px;
     font-size: 18px;
     line-height: 1.7;
-    text-wrap: balance;
+    letter-spacing: -1px;
 }
 .row-ourteam {
     display: grid;
@@ -182,9 +188,10 @@
     display: flex;
     overflow: hidden;
     flex-direction: column;
-    margin-bottom: 15px;
 }
-
+.row-ourteam .wrap-member-team img {
+    width: 100%;
+}
 .list-icon.col-nav-social {
     position: absolute;
     right: 7.3%;
@@ -249,16 +256,14 @@
 
 .row-ourteam .wrap-member-team .wrap-title {
     background-color: #fff;
-    margin: -72px 37px 15px 37px;
+    margin: -50px 35px 0 35px;
     box-shadow: 0 3px 20px 0 rgb(0 0 0 / 6%);
     border-radius: 5px;
-    padding: 8px 0 0 33px;
+    padding: 8px 25px;
 }
 .wrap-title .name-member a {
     color: #0053FF;
-    font-size: 32px;
-    letter-spacing: 0;
-    margin: 0 0px -15px 0;
+    font-size: 25px;
 }
 .wrap-title .woker {
     color: #565872;
@@ -266,4 +271,70 @@
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+    .section-wrap {
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+    .description-wrap {
+        padding: 0 15px;
+    }
+    .wrap-border-img {
+        display: none;
+    }
+    .row-ourteam {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        gap: 1em;
+    }
+}
+@media screen and (max-width: 991px) {
+    .wrap-banner-left {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .wrap-banner-right {
+        display: none;
+    }
+    .name-page {
+        align-items: center;
+    }
+    .wrap-banner-left img {
+        height: 100%;
+        min-height: 250px;
+        object-position: center;
+    }
+    .wrap-border-img {
+        display: none;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .hero-title,
+    .title-section {
+        font-size: 35px;
+    }
+    .hero-subtitle, .hero-subtitle a,
+    .subtitle-section,
+    .description-wrap,
+    .ourteam-section .description {
+        font-size: 14px;
+    }
+    .subtitle-section {
+        margin-bottom: 15px;
+    }
+    .why-choose-us,
+    .row-group-section,
+    .ourteam-section {
+        padding: 50px 0;
+    }
+    .row-group-section .title-section {
+        font-size: 28px;
+    }
+    .row-ourteam {
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        padding: 0 15px;
+    }
+    .row-ourteam .wrap-member-team .wrap-title {
+        margin: -50px 15px 0 15px;
+    }
 }

@@ -86,7 +86,7 @@ a {
 }
 
 body {
-    /* font-family: 'Acumin Pro'; */
+    /* font-family: "acumin-pro-condensed",sans-serif; */
     font-family: "acumin-pro-wide",sans-serif;
 }
 .container {
@@ -379,8 +379,8 @@ body {
     color: #1d1b24;
     font-size: 15px;
     line-height: 1;
-    letter-spacing: 2px;
-    padding: 22px 15px;
+    letter-spacing: 1px;
+    padding: 22px 30px;
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: 500;
