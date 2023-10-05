@@ -1,6 +1,7 @@
 
 @import "animate.css";
 @import "fontawesome.css";
+@import "footer.css";
 
 @font-face {
     font-family: 'Acumin Pro';
@@ -143,7 +144,8 @@
     }
 }
 
-.btn {
+.btn,
+a {
     transition: all .25s ease-in-out;
 }
 .btn:hover {
@@ -469,25 +471,4 @@ body {
 .btn-dark {
     background-color: #4C475C;
     color: #fff;
-}
-
-
-
-
-/* footer */
-.footer {
-    background-color: #292633;
-    color: #fff;
-}
-.wrap-our-footer {
-    display: grid;
-    grid-template-columns: repeat(3,minmax(0,1fr));
-    gap: 3em;
-    /* margin: -71px -23px 0 -6px; */
-}
-.our-inner {
-    border-radius: 5px;
-    color: #fff;
-    padding: 36px 42px 31px;
-    background-color: #0053ff;
 }

@@ -47,7 +47,6 @@
 }
 .hero-subtitle a::after {
     content: "|";
-    font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 18px;
     margin-left: 6px;
