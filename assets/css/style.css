@@ -492,6 +492,109 @@ body {
     display: flex;
     position: relative;
 }
+.tab-section {
+    padding: 50px 0 0;
+}
+.tab-section .sub-title {
+    color: #1d1b24;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+}
+.tab-section .title {
+    font-size: 55px;
+    color: #1d1b24;
+    text-transform: uppercase;
+}
+.tab-section .content-tab {
+    background-color: transparent;
+    margin: 0 0 100px;
+}
+.tab-section .content-tab .content-item {
+    padding: 0;
+}
+.tab-section .content-tab .title-wrap {
+    width: 100%;
+}
+.tab-section .content-tab .title-heading {
+    font-size: 42px;
+    max-width: 100%;
+}
+.tab-section .content-tab .text-col p {
+    color: #383446;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 0 20px;
+}
+.services-table {
+    margin: 20px 0 0;
+    width: 100%;
+}
+.services-table .services-title {
+    color: #0053ff;
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0 0 10px;
+}
+.services-table .services-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.services-items-center {
+    justify-content: center;
+}
+.services-table .services-item {
+    width: 33.33%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 0 15px;
+}
+.services-table .services-item-inner {
+    background-color: #eeece4;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.07 );
+}
+.services-table .services-item .wrap-img {
+    max-width: 76px;
+}
+.services-table .services-item .wrap-img.small-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 76px;
+    height: 76px;
+}
+.services-table .services-item .wrap-img.small-img img {
+    max-width: 38px;
+}
+.services-table .services-item p {
+    text-align: center;
+    flex: 1 1 auto;
+}
+
+
+
+.for-more {
+    display: flex;
+    align-items: center;
+    margin: 0 0 40px;
+}
+.for-more p {
+    color: #383446;
+    font-size: 35px;
+    padding: 0 20px 0 0;
+    letter-spacing: -1px;
+}
+.for-more .highlight {
+    color: #0053FF;
+}
+.for-more .btn-holder {
+    flex: 1 0 auto;
+}
 .our-goal {
     background-color: #383446;
     text-align: center;
