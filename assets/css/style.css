@@ -396,6 +396,11 @@ body {
     padding: 0 50px 0 0;
     flex: 0 0 55%;
     max-width: 55%;
+    line-height: 1.65;
+}
+.content-tab .text-col.col-full {
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 .content-tab .img-col {
     flex: 0 0 45%;
@@ -426,7 +431,7 @@ body {
     font-weight: 500;
     letter-spacing: 2px;
     max-width: 300px;
-    margin: 27px 0 15px;
+    margin: 27px 0 10px;
 }
 .content-tab .text {
     color: #1d1b24;
@@ -493,22 +498,25 @@ body {
     position: relative;
 }
 .tab-section {
-    padding: 50px 0 0;
+    padding: 78px 0 0;
 }
 .tab-section .sub-title {
     color: #1d1b24;
     font-size: 18px;
     text-transform: uppercase;
-    margin: 0 0 30px;
+    letter-spacing: 2px;
+    margin: 0 0 29px -15px;
 }
 .tab-section .title {
     font-size: 55px;
     color: #1d1b24;
-    text-transform: uppercase;
+    letter-spacing: -3px;
+    line-height: 1;
+    margin: 0 0 25px;
 }
 .tab-section .content-tab {
     background-color: transparent;
-    margin: 0 0 100px;
+    margin: 0 0 124px;
 }
 .tab-section .content-tab .content-item {
     padding: 0;
@@ -519,22 +527,24 @@ body {
 .tab-section .content-tab .title-heading {
     font-size: 42px;
     max-width: 100%;
+    letter-spacing: -3px;
 }
 .tab-section .content-tab .text-col p {
     color: #383446;
     font-size: 18px;
     font-weight: 300;
-    margin: 0 0 20px;
+    margin: 0 0 30px;
 }
 .services-table {
-    margin: 20px 0 0;
+    margin: 25px 0 0;
     width: 100%;
 }
 .services-table .services-title {
     color: #0053ff;
     font-size: 32px;
     font-weight: 500;
-    margin: 0 0 10px;
+    letter-spacing: 1px;
+    margin: 0 0 19px;
 }
 .services-table .services-items {
     display: flex;
@@ -552,42 +562,43 @@ body {
     margin: 0 0 15px;
 }
 .services-table .services-item-inner {
+    color: #1D1B24;
+    font-size: 20px;
     background-color: #eeece4;
     border-radius: 5px;
     display: flex;
     align-items: center;
     box-shadow: 0px 5px 10px rgba(0,0,0,0.07 );
+    padding: 23px 20px 23px 10px;
 }
 .services-table .services-item .wrap-img {
-    max-width: 76px;
+    max-width: 115px;
 }
 .services-table .services-item .wrap-img.small-img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 76px;
-    height: 76px;
+    width: 115px;
+    height: 115px;
 }
-.services-table .services-item .wrap-img.small-img img {
+/* .services-table .services-item .wrap-img.small-img img {
     max-width: 38px;
-}
+} */
 .services-table .services-item p {
     text-align: center;
     flex: 1 1 auto;
 }
-
-
-
 .for-more {
     display: flex;
     align-items: center;
-    margin: 0 0 40px;
+    margin: 0 0 65px;
 }
 .for-more p {
     color: #383446;
     font-size: 35px;
     padding: 0 20px 0 0;
-    letter-spacing: -1px;
+    line-height: 1.2;
+    letter-spacing: -2px;
 }
 .for-more .highlight {
     color: #0053FF;
@@ -598,20 +609,19 @@ body {
 .our-goal {
     background-color: #383446;
     text-align: center;
-    padding: 60px 15px;
+    padding: 55px 15px 72px;
 }
 .our-goal p {
     font-size: 28px;
     font-weight: 500;
     line-height: 1.5;
     color: #fff;
-    margin: 0 0 30px;
+    margin: 0 auto 27px;
+    max-width: 850px;
 }
 .our-goal .btn-holder {
     justify-content: center;
 }
-
-
 .btn-holder {
     display: flex;
 }
@@ -636,8 +646,6 @@ body {
     background-color: #4C475C;
     color: #fff;
 }
-
-
 #scroll-top {
     position: fixed;
     display: block;
@@ -680,9 +688,6 @@ body {
     visibility: visible;
     z-index: 99;
 }
-
-
-
 
 @media (max-width: 1630px) {
     .header .menu-item {
@@ -804,6 +809,18 @@ body {
         align-items: center;
         display: flex;
     }
+    .services .content-tab .text-col,
+    .services .content-tab .img-col {
+        padding: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .services-table .services-item {
+        width: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0px 0 20px;
+    }
 }
 @media (max-width: 767px) {
     .home .hero {
@@ -857,7 +874,64 @@ body {
     .who-we-are .title {
         font-size: 40px;
     }
-    .who-we-are p {
+    .services .tab-section .content-tab {
+        margin: 0 0 50px;
+    }
+    .who-we-are p,
+    .services .tab-section .content-tab .text-col p {
         font-size: 14px;
+    }
+    .services .tab-section .sub-title {
+        text-align: center;
+        font-size: 14px;
+        margin: 0 0 15px 0;
+    }
+    .services-table .services-title,
+    .services .tab-section .content-tab .title-heading {
+        font-size: 24px;
+        text-align: center;
+    }
+    .services .tab-section .title {
+        font-size: 35px;
+    }
+    .services .tab-section .title,
+    .services .tab-section .content-tab .title-heading,
+    .services .content-tab .text-col {
+        text-align: center;
+    }
+    .services .content-tab .inner-wrap {
+        flex-direction: column;
+    }
+    .services-table .services-item p {
+        font-size: 14px;
+    }
+    .services-table .services-items {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .services-table .services-item {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 0 0 10px;
+    }
+    .services-table .services-item .wrap-img {
+        max-width: 75px;
+        max-height: 75px;
+    }
+    .services-table .services-item .wrap-img.small-img img {
+        max-width: 38px;
+        max-height: 38px;
+    }
+    .services-table {
+        margin: 0;
+    }
+    .for-more {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 0 50px;
+    }
+    .for-more p {
+        padding: 0 0 25px;
+        font-size: 28px;
     }
 }
