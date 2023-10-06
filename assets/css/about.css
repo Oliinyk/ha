@@ -1,17 +1,12 @@
 
-.about .hero {
+.hero {
     display: flex;
-    /* flex-wrap: wrap; */
     position: relative;
 }
 .wrap-banner-left {
     flex: 0 0 44.11111%;
     max-width: 44.11111%;
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
-    /* background-image: url('../img/about/hero-bg.png'); */
-    /* background-size: cover; */
 }
 .wrap-banner-left img {
     object-fit: cover;
