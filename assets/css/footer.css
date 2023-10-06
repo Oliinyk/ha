@@ -181,6 +181,7 @@
     }
     .wrap-our-footer.our-contact {
         grid-template-columns: repeat(1,minmax(0,1fr));
+        gap: 1rem;
     }
     .wrap-our-footer .wrap-about {
         grid-column: span 2/span 2;
@@ -220,6 +221,17 @@
     .wrap-our-footer .wrap-about {
         gap: 1rem;
         align-items: center;
+    }
+    .our-inner .icon {
+        max-width: 55px;
+        min-width: 55px;
+        height: 55px;
+    }
+    .our-inner .icon svg {
+        max-width: 25px;
+    }
+    .our-inner .list-info .sub-title a {
+        font-size: 14px;
     }
     .logo-footer,
     .list-social {
