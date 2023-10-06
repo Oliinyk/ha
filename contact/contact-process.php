@@ -1,5 +1,5 @@
 <?php
-$address = "wimipot142@htoal.com";
+$address = "info@hasecuritysolutions.com";
 if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 
 $error = false;
