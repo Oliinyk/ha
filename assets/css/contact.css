@@ -56,8 +56,19 @@
     text-transform: capitalize;
 }
 label.error {
-    color: red;
+    color: #ff0000;
     font-size: 14px;
+}
+.flat-alert.msg-success {
+    position: relative;
+    width: 100%;
+    grid-column: span 2/span 2;
+    font-size: 16px;
+    color: #00bc00;
+}
+.flat-alert.msg-success .close {
+    color: #4C475C;
+    margin: 0 0 0 10px;
 }
 @media screen and (max-width: 991px) {
     .contact .our-contact {
